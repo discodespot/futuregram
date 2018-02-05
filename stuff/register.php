@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php 
+<?php
 $connection = mysqli_connect("localhost", "root","","futureeyes"); //connect to db
 if(mysqli_connect_errno())
 {
@@ -46,22 +46,20 @@ if(isset($_POST['register_button'])){
 </body>
 </html>
 
-<?php 
+<?php
 /**
-*  
+*
 */
-class NewUser 
+class NewUser
 {
-	
-	public function __construct($fname=null) {
+
+	public function __construct($fname=null, $lname=null, $email=null, $password=null) {
         $this->fname = ($fname) ?: null;
         $this->lname = ($lname) ?: null;
         $this->email = ($email) ?: null;
         $this->password = ($password) ?: null;
-        $this->date = ($date) ?: null;
-     
 
-
-    }
+  }
+		
 }
 ?>
